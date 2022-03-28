@@ -16,27 +16,23 @@ int main()
       
       duration_minute = end_minute - start_minute;
       
-      if(minute<0)
+      if(duration_minute<0)
        duration_minute = 60 + (end_minute - start_minute);
-       hour--
+       duration_hour--;
        
        
        
-       if(start_hour == end_hour && start_minute == end_minute);
+       if(start_hour == end_hour && start_minute == end_minute){
           printf("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)\n");
-          
+       }
         else
+        {
         printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n",duration_hour,duration_minute);
-        
+        }
         
         return 0;
+        
 }
            
-               
-               
-               
-               
     
-    
-    
-}
+              
